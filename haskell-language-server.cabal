@@ -56,7 +56,7 @@ library
   autogen-modules:  Paths_haskell_language_server
   hs-source-dirs:   src
   build-depends:
-    , containers
+      containers
     , data-default
     , ghc
     , ghcide
@@ -88,6 +88,7 @@ executable haskell-language-server
     Ide.Plugin.Floskell
     Ide.Plugin.Fourmolu
     Ide.Plugin.ImportLens
+    Ide.Plugin.Liquid
     Ide.Plugin.Ormolu
     Ide.Plugin.Pragmas
     Ide.Plugin.Retrie
@@ -106,10 +107,12 @@ executable haskell-language-server
 
   build-depends:
     , aeson
+    , attoparsec
     , binary
     , bytestring
     , containers
     , deepseq
+    , fingertree
     , floskell                 ^>=0.10
     , fourmolu                 ^>=0.1
     , ghc

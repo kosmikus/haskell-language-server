@@ -17,6 +17,7 @@ import Ide.Plugin.GhcIde                  as GhcIde
 import Ide.Plugin.Floskell                as Floskell
 import Ide.Plugin.Fourmolu                as Fourmolu
 import Ide.Plugin.ImportLens              as ImportLens
+import Ide.Plugin.Liquid                  as Liquid
 import Ide.Plugin.Ormolu                  as Ormolu
 import Ide.Plugin.StylishHaskell          as StylishHaskell
 import Ide.Plugin.Retrie                  as Retrie
@@ -45,6 +46,7 @@ idePlugins includeExamples = pluginDescToIdePlugins allPlugins
       , Pragmas.descriptor  "pragmas"
       , Floskell.descriptor "floskell"
       , Fourmolu.descriptor "fourmolu"
+      , Liquid.descriptor "liquid"
       , Ormolu.descriptor   "ormolu"
       , StylishHaskell.descriptor "stylish-haskell"
       , Retrie.descriptor "retrie"
